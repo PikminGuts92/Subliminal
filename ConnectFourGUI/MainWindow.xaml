@@ -1,0 +1,42 @@
+﻿<Window x:Class="ConnectFourGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConnectFourGUI"
+        mc:Ignorable="d"
+        Icon="Logo.ico"
+        Title="Connect Four GUI" Height="750" Width="700" KeyUp="Window_KeyUp">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="276*"/>
+        </Grid.RowDefinitions>
+
+        <!--Options-->
+        <GroupBox Grid.Row="0" Header="Options">
+            <StackPanel Name="StackPanel_Options" Background="White" Margin="5">
+                <Button Name="Button_Reset" Background="White" Click="Button_Reset_Click">Reset</Button>
+                <Button Name="Button_Exit" Background="White" Click="Button_Exit_Click">Exit</Button>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Difficulty</Label>
+                    <Label Name="Label_Difficulty">5</Label>
+                    <Slider Name="Slider_Difficulty" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Width="580"
+                            Minimum="1" Maximum="7" Value="5" ValueChanged="Slider_Difficulty_ValueChanged"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        
+        <!--Game board-->
+        <GroupBox Grid.Row="1" Header="Board">
+            <Grid Name="Grid_GameBoard" Background="#FFD1D136" Loaded="Grid_GameBoard_Loaded">
+                <Grid.Resources>
+                    <Ellipse x:Key="Disc" x:Shared="False" Grid.Row="0" Fill="White" Margin="4"/>
+                    <ContextMenu x:Key="ContextMenu_Options">
+                        <MenuItem x:Name="MenuItem_ExportImage" Header="Export Image" Click="MenuItem_ExportImage_Click" />
+                    </ContextMenu>
+                </Grid.Resources>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

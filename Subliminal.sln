@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subliminal", "Subliminal\Subliminal.csproj", "{89D87052-ECE4-43AD-B425-948478CA256B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectFourGUI", "ConnectFourGUI\ConnectFourGUI.csproj", "{6B8C3B57-7954-4939-9478-A4F21472698A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89D87052-ECE4-43AD-B425-948478CA256B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D87052-ECE4-43AD-B425-948478CA256B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D87052-ECE4-43AD-B425-948478CA256B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D87052-ECE4-43AD-B425-948478CA256B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8C3B57-7954-4939-9478-A4F21472698A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8C3B57-7954-4939-9478-A4F21472698A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8C3B57-7954-4939-9478-A4F21472698A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8C3B57-7954-4939-9478-A4F21472698A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
