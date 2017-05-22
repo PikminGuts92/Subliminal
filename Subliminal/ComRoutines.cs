@@ -132,8 +132,6 @@ namespace Subliminal
 
             if (maxPlayer)
             {
-                int v = int.MinValue;
-
                 foreach (int move in moves)
                 {
                     BoardState nextState = new BoardState(bs);
@@ -159,8 +157,6 @@ namespace Subliminal
             }
             else
             {
-                int v = int.MaxValue;
-
                 foreach (int move in moves)
                 {
                     BoardState nextState = new BoardState(bs);
